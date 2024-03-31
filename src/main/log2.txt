@@ -1,0 +1,9 @@
+*** Starting wc test.
+worker failed, restart
+Map Phase over
+worker failed, restart
+worker failed, restart
+Reduce Phase over
+worker failed, restart
+Job Done, remove all tempfiles
+job done, exitjob done, exit--- wc test: PASS

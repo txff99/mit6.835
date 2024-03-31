@@ -248,7 +248,7 @@ sleep 1
 jobs &> /dev/null
 if [[ "$OSTYPE" = "darwin"* ]]
 then
-  # bash on the Mac doesn't have wait -n
+  # bash on the Mac doesnt have wait -n
   while [ ! -e $DF ]
   do
     sleep 0.2

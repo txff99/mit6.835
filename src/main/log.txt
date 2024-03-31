@@ -1,0 +1,78 @@
+*** Starting wc test.
+worker failed, restart
+Map Phase over
+worker failed, restart
+Reduce Phase over
+worker failed, restart
+Job Done, remove all tempfiles and intermediate
+job done, exit--- wc test: PASS
+*** Starting indexer test.
+Map Phase over
+worker failed, restart
+Reduce Phase over
+worker failed, restart
+Job Done, remove all tempfiles and intermediate
+--- indexer test: PASS
+*** Starting map parallelism test.
+Map Phase over
+worker failed, restart
+worker failed, restart
+Reduce Phase over
+worker failed, restart
+job done, exitJob Done, remove all tempfiles and intermediate
+--- map parallelism test: PASS
+*** Starting reduce parallelism test.
+Map Phase over
+worker failed, restart
+Reduce Phase over
+worker failed, restart
+Job Done, remove all tempfiles and intermediate
+--- reduce parallelism test: PASS
+*** Starting job count test.
+Map Phase over
+worker failed, restart
+worker failed, restart
+Reduce Phase over
+worker failed, restart
+job done, exitJob Done, remove all tempfiles and intermediate
+--- job count test: PASS
+*** Starting early exit test.
+worker failed, restart
+Map Phase over
+worker failed, restart
+worker failed, restart
+worker failed, restart
+Reduce Phase over
+worker failed, restart
+job done, exitJob Done, remove all tempfiles and intermediate
+--- early exit test: PASS
+*** Starting crash test.
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+worker failed, restart
+Map Phase over
+worker failed, restart
+Reduce Phase over
+worker failed, restart
+Job Done, remove all tempfiles and intermediate
+job done, exitjob done, exit--- crash test: PASS
+*** PASSED ALL TESTS
