@@ -1,0 +1,94 @@
+Test (3A): initial election ...
+state of server 0: term 1, is leader: true
+state of server 1: term 1, is leader: false
+state of server 2: term 1, is leader: false
+state of server 0: term 1, is leader: true
+state of server 1: term 1, is leader: false
+state of server 2: term 1, is leader: false
+state of server 0: term 1, is leader: true
+state of server 1: term 1, is leader: false
+state of server 2: term 1, is leader: false
+state of server 0: term 1, is leader: true
+state of server 1: term 1, is leader: false
+state of server 2: term 1, is leader: false
+  ... Passed --   3.1  3   56   14036    0
+Test (3A): election after network failure ...
+state of server 0: term 1, is leader: false
+state of server 1: term 1, is leader: false
+state of server 2: term 1, is leader: true
+disconnect leader
+state of server 0: term 2, is leader: true
+state of server 1: term 2, is leader: false
+connect leader
+state of server 0: term 2, is leader: true
+state of server 1: term 2, is leader: false
+state of server 2: term 2, is leader: false
+disconnect 2
+state of server 2: term 6, is leader: false
+quorum arise
+state of server 1: term 7, is leader: false
+state of server 2: term 7, is leader: true
+state of server 0: term 7, is leader: false
+state of server 1: term 7, is leader: false
+state of server 2: term 7, is leader: true
+  ... Passed --   4.5  3  114   21754    0
+Test (3A): multiple elections ...
+state of server 0: term 1, is leader: false
+state of server 1: term 1, is leader: false
+state of server 2: term 1, is leader: false
+state of server 3: term 1, is leader: false
+state of server 4: term 1, is leader: true
+state of server 5: term 1, is leader: false
+state of server 6: term 1, is leader: false
+state of server 1: term 1, is leader: false
+state of server 3: term 1, is leader: false
+state of server 4: term 1, is leader: true
+state of server 5: term 1, is leader: false
+state of server 0: term 3, is leader: true
+state of server 1: term 3, is leader: false
+state of server 2: term 3, is leader: false
+state of server 3: term 3, is leader: false
+state of server 0: term 3, is leader: true
+state of server 2: term 3, is leader: false
+state of server 4: term 3, is leader: false
+state of server 5: term 3, is leader: false
+state of server 1: term 6, is leader: true
+state of server 3: term 6, is leader: false
+state of server 4: term 6, is leader: false
+state of server 6: term 6, is leader: false
+state of server 1: term 6, is leader: true
+state of server 2: term 6, is leader: false
+state of server 3: term 6, is leader: false
+state of server 4: term 6, is leader: false
+state of server 5: term 6, is leader: false
+state of server 6: term 6, is leader: false
+state of server 0: term 7, is leader: true
+state of server 2: term 8, is leader: false
+state of server 4: term 8, is leader: false
+state of server 6: term 8, is leader: false
+state of server 1: term 8, is leader: false
+state of server 2: term 8, is leader: true
+state of server 5: term 8, is leader: false
+state of server 6: term 8, is leader: false
+state of server 1: term 9, is leader: false
+state of server 3: term 10, is leader: false
+state of server 4: term 10, is leader: false
+state of server 6: term 9, is leader: false
+state of server 1: term 10, is leader: false
+state of server 3: term 10, is leader: true
+state of server 4: term 10, is leader: false
+state of server 6: term 10, is leader: false
+state of server 0: term 11, is leader: true
+state of server 1: term 11, is leader: false
+state of server 4: term 11, is leader: false
+state of server 5: term 11, is leader: false
+state of server 0: term 11, is leader: true
+state of server 1: term 11, is leader: false
+state of server 2: term 11, is leader: false
+state of server 3: term 11, is leader: false
+state of server 4: term 11, is leader: false
+state of server 5: term 11, is leader: false
+state of server 6: term 11, is leader: false
+  ... Passed --   6.1  7  732  140897    0
+PASS
+ok  	6.5840/raft	13.712s
